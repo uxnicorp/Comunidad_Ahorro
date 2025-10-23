@@ -6,6 +6,8 @@ import AnimatedProductCarousel from './Componentes/Carrousel/Carrousel'
 import MultiCardCarousel from './Componentes/CarrouselAccesorios/CarrouselAccesorios'
 import { Footer } from './Componentes/Foother/Foother'
 import RotatingCircleComponent from './Componentes/Nuestros_Servicios/NuestrosServicios'
+import NewsCarousel from './Componentes/Notificaciones/News'
+import TestimonialsCarousel from './Componentes/Opiniones/Opiniones'
 
 
 
@@ -31,15 +33,28 @@ function App() {
           searchedProduct={searchedProduct}
         />
       </div>
+
+<div id="novedades">  {/* RotatingCircleComponent */}
+        <NewsCarousel />
+      </div>
+
       <div id="servicios">  {/* RotatingCircleComponent */}
         <RotatingCircleComponent />
       </div>
+
+<div id="opiniones">  {/* RotatingCircleComponent */}
+        <TestimonialsCarousel />
+      </div>
+
       <div id="accesorios">  {/* AnimatedProductCarousel */}
         <AnimatedProductCarousel 
         searchTerm={searchTerm}
           searchedProduct={searchedProduct}/>
         
       </div>
+
+
+
       <div id="seguinos">  {/* Footer */}
         <Footer />
       </div>
